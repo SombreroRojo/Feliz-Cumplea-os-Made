@@ -1,0 +1,50 @@
+/* Estilos específicos para la página 4 */
+/* Agrega estilos para el cuadro de carta y el elemento p */
+.letter-box,
+.main-text {
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto; /* Cambiado para centrar el cuadro */
+    max-width: 600px;
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+
+.main-text {
+    font-size: 1.2em;
+}
+
+/* Estilos para el contenedor de video */
+#video-container {
+    margin: 20px auto; /* Espaciado alrededor del contenedor */
+    max-width: 600px;
+    text-align: center; /* Alinea el video al centro */
+}
+
+/* Estilos para el botón de regreso */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333; /* Fondo sólido del botón */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

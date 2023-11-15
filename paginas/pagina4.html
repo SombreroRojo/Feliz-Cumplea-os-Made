@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles4.css"> <!-- Ajusta según sea necesario -->
+</head>
+<body>
+    <header>
+        <h1>Influencer Me Salio</h1>
+    </header>
+
+    <main>
+        <p class="main-text">La Mejor TikToker</p>
+
+        <!-- Elemento donde se añadirá el video con JavaScript -->
+        <div id="video-container"></div>
+
+        <div class="letter-box">
+            <textarea id="carta" placeholder="¡Escribe lo que sientes en este momento..."></textarea>
+            <button onclick="guardarCarta()">Guardar</button>
+        </div>
+
+        <!-- Botón para regresar al index -->
+        <a href="../index.html" class="back-button">Inicio</a>
+
+    </main>
+
+   
+
+    <!-- Script en tu archivo JavaScript (scripts4.js) -->
+    <script>
+        // Ruta del video local
+        const videoPath = '../videos/Download.mp4';
+
+        // Crear el elemento video
+        const video = document.createElement('video');
+        video.width = '560';
+        video.height = '315';
+        video.controls = true;
+
+        // Añadir la fuente del video
+        const source = document.createElement('source');
+        source.src = videoPath;
+        source.type = 'video/mp4';
+        video.appendChild(source);
+
+        // Añadir el video al contenedor
+        const videoContainer = document.getElementById('video-container');
+        videoContainer.appendChild(video);
+    </script>
+
+<footer>
+    <p>Mi Cumpleañera</p>
+</footer>
+
+</body>
+</html>
