@@ -1,0 +1,31 @@
+/* Agrega estilos para el cuadro de carta */
+.letter-box {
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto; /* Cambiado para centrar el cuadro */
+    max-width: 600px;
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+/* Agrega estilos para el botón de regreso */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333; /* Fondo sólido del botón */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #555;
+}

@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: 'Gothic', sans-serif; /* Agrega una fuente gótica si está disponible */
+    background: linear-gradient(to bottom, #1c1c1c, #444); /* Degradado de colores góticos */
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #555;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+
+#masonry-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+
+.masonry-item {
+    background-color: #444;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.masonry-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #555;
+}
