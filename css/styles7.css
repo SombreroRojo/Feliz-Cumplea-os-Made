@@ -1,0 +1,71 @@
+/* Estilos generales */header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Puedes cambiar el color de fondo si lo deseas */
+    background-image: url('../images/background5.jpeg'); /* Ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: 120px;
+    bottom: 0;
+    width: 100%;
+}
+
+
+main {
+    margin: 20px;
+}
+
+/* Estilos para el contenedor de videos */
+#video-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+video {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el contenedor de texto */
+.texto-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el botón de regresar */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

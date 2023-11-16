@@ -9,7 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
         { imageUrl: 'images/imagen4.jpg', pageUrl: 'paginas/pagina4.html' },
         { imageUrl: 'images/imagen5.jpg', pageUrl: 'paginas/pagina5.html' },
         { imageUrl: 'images/imagen6.jpg', pageUrl: 'paginas/pagina6.html' },
+        { imageUrl: 'images/made6.jpg', pageUrl: 'paginas/pagina7.html' },
+        { imageUrl: 'images/made12.jpg', pageUrl: 'paginas/pagina8.html' },
+        { imageUrl: 'images/made8.jpg', pageUrl: 'paginas/pagina9.html' },
+        { imageUrl: 'images/made7.jpg', pageUrl: 'paginas/pagina10.html' },
+        { imageUrl: 'images/imagen7.jpg', pageUrl: 'paginas/ultimasorpresa.html' },
     ];
+    
 
     // Función para crear elementos masonry
     function createMasonryItem(data) {

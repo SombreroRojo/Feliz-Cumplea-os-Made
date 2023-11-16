@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 7</title>
+    <link rel="stylesheet" href="../css/styles7.css">
+</head>
+<body>
+    <header>
+        <h1>Página 7</h1>
+    </header>
+
+    <main>
+        <div id="video-container">
+            <!-- Script en tu archivo JavaScript (scripts7.js) -->
+            <script>
+                // Rutas de los videos locales
+                const videoPaths = [
+                    '../videos/Download1.mp4',
+                    '../videos/Download4.mp4',
+                    '../videos/Download3.mp4'
+                ];
+
+                // Crear los elementos de video
+                videoPaths.forEach(videoPath => {
+                    const video = document.createElement('video');
+                    video.width = '560';
+                    video.height = '315';
+                    video.controls = true;
+
+                    // Añadir la fuente del video
+                    const source = document.createElement('source');
+                    source.src = videoPath;
+                    source.type = 'video/mp4';
+                    video.appendChild(source);
+
+                    // Añadir el video al contenedor
+                    document.getElementById('video-container').appendChild(video);
+                });
+            </script>
+        </div>
+
+        <div class="texto-container">
+            <p>Nunca dejes las extravagancias, porque en la exuberancia de lo inusual y lo atrevido, descubrirás la esencia misma de la vida. Las extravagancias son como pinceladas audaces en el lienzo de la monotonía, añadiendo colores vibrantes y texturas inesperadas. En la rareza, encontrarás tu singularidad, tu voz auténtica que se eleva por encima del murmullo uniforme. Las extravagancias no son desviaciones, son expresiones genuinas de tu ser interior, recordándote que la belleza reside en la diversidad y en abrazar lo excepcional. Así que, adelante, deja que tus extravagancias florezcan como flores raras en el jardín de la vida, porque en la originalidad descubrirás la verdadera magia que yace en tu singularidad.
+            </p>
+        </div>
+
+        <!-- Otros elementos de la página, como botones, enlaces, etc. -->
+
+        <!-- Botón para regresar al índice -->
+        <a href="../index.html" class="back-button">Inicio</a>
+    </main>
+
+    <footer>
+        <p>Mi Cumpleañera</p>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
