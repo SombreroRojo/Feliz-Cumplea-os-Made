@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Gothic', sans-serif;
-    background: url('../images/salpicadura.jpeg') center fixed; /* Ruta de la imagen de fondo */
+    background: url('../images/fondo.jpeg') center fixed; /* Ruta de la imagen de fondo */
     background-size: cover; /* Ajusta el tamaño para cubrir todo el body */
     color: #fff;
 }
