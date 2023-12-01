@@ -1,21 +1,24 @@
 body {
     margin: 0;
-    font-family: 'Gothic', sans-serif; /* Agrega una fuente gótica si está disponible */
-    background: linear-gradient(to bottom, #1c1c1c, #444); /* Degradado de colores góticos */
+    font-family: 'Gothic', sans-serif;
+    background: url('../images/salpicadura.jpeg') center fixed; /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño para cubrir todo el body */
     color: #fff;
 }
 
+
 header {
-    background-color: #333;
+    background-color: #2c3e50;
     padding: 20px;
     text-align: center;
-    border-bottom: 2px solid #555;
+    border-bottom: 2px solid #ecf0f1;
 }
 
 h1 {
     margin: 0;
     font-size: 36px;
     letter-spacing: 3px;
+    color: #ecf0f1;
 }
 
 #masonry-container {
@@ -26,15 +29,41 @@ h1 {
 }
 
 .masonry-item {
-    background-color: #444;
+    background: url('../images/borde\ imagen.jpeg') center no-repeat;
+    background-size: contain; /* Ajusta el tamaño para contener el borde */
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.masonry-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/salpicadura.jpeg') fixed; /* Ruta de la imagen de salpicaduras de pintura */
+    opacity: 0.2; /* Opacidad de las salpicaduras */
+    z-index: -1; /* Coloca la salpicadura en el fondo */
 }
 
 .masonry-item img {
     width: 100%;
-    height: auto;
+    height: 400px; /* Ajusta esta altura según tus preferencias */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor manteniendo las proporciones */
     display: block;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid #2c3e50;
+}
+
+
+a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3498db;
 }
