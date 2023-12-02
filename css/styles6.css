@@ -72,3 +72,11 @@ a:hover {
 .back-button:hover {
     background: radial-gradient(circle, #ff3333, #ffcc00); /* Cambia el degradado al pasar el mouse */
 }
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #33333300;
+    color: white;
+}

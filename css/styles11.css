@@ -27,7 +27,7 @@ main {
     transform: scale(1.05);
 }
 
-.sorpresa-container img {
+.sorpresa-container img {   
     width: 100%;
     height: auto;
     display: block;

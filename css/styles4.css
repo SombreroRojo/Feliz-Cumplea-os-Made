@@ -1,8 +1,16 @@
-/* Estilos específicos para la página 4 */
+
 /* Agrega estilos para el cuadro de carta y el elemento p */
-.letter-box,
+.letter-box {
+    background-color: #ffffff;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px auto; /* Cambiado para centrar el cuadro */
+    max-width: 600px;
+    text-align: center; /* Alinea el contenido al centro */
+}
 .main-text {
-    background-color: #fff;
+    background-color: #000000;
     border: 2px solid #333;
     border-radius: 8px;
     padding: 20px;
@@ -13,13 +21,13 @@
 
 
 .main-text {
-    font-size: 1.2em;
+    font-size: 1.8em;
 }
 
 /* Estilos para el contenedor de video */
 #video-container {
-    margin: 20px auto; /* Espaciado alrededor del contenedor */
-    max-width: 600px;
+    margin: 120px auto; /* Espaciado alrededor del contenedor */
+    max-width: 800px;
     text-align: center; /* Alinea el video al centro */
 }
 
@@ -80,4 +88,12 @@ img {
     height: auto;
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #33333300;
+    color: white;
 }
