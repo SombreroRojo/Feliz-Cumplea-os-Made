@@ -56,3 +56,19 @@ a {
 a:hover {
     background-color: #555;
 }
+
+/* Estilos para el botón de regreso al index */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: radial-gradient(circle, #ff0000, #ffff00); /* Degradado entre rojo y amarillo */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%; /* Hace que el botón sea circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.back-button:hover {
+    background: radial-gradient(circle, #ff3333, #ffcc00); /* Cambia el degradado al pasar el mouse */
+}

@@ -31,3 +31,47 @@ textarea {
 .footer-link:hover {
     background-color: #555;
 }
+
+/* Estilos para la imagen */
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Ajusta la altura según tus preferencias */
+}
+
+.img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilos para el botón de regreso al index */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: radial-gradient(circle, #ff0000, #ffff00); /* Degradado entre rojo y amarillo */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%; /* Hace que el botón sea circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.back-button:hover {
+    background: radial-gradient(circle, #ff3333, #ffcc00); /* Cambia el degradado al pasar el mouse */
+}
+
+
+/* Estilos para la imagen */
+img {
+    display: block;
+    margin: auto;
+    width: 60%; /* Ajusta el tamaño de la imagen según tus preferencias */
+    max-width: 600px; /* Máximo ancho de la imagen */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
