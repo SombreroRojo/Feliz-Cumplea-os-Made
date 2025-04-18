@@ -1,69 +1,82 @@
-body {
+/* Colores principales */
+:root {
+    --primary-color: #2c3e50; /* Azul oscuro */
+    --secondary-color: #ecf0f1; /* Gris claro */
+    --accent-color: #3498db; /* Azul turquesa */
+  }
+  
+  /* Estilos globales */
+  body {
     margin: 0;
     font-family: 'Gothic', sans-serif;
-    background: url('../images/fondo.jpeg') center fixed; /* Ruta de la imagen de fondo */
-    background-size: cover; /* Ajusta el tamaño para cubrir todo el body */
+    background: url('../images/fondo.jpeg') center fixed;
+    background-size: cover;
     color: #fff;
-}
-
-
-header {
-    background-color: #2c3e50;
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: var(--primary-color);
     padding: 20px;
     text-align: center;
-    border-bottom: 2px solid #ecf0f1;
-}
-
-h1 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  
+  h1 {
     margin: 0;
     font-size: 36px;
     letter-spacing: 3px;
-    color: #ecf0f1;
-}
-
-#masonry-container {
+  }
+  
+  /* Contenedor principal */
+  #masonry-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 16px;
     padding: 16px;
-}
-
-.masonry-item {
-    background: url('../images/borde\ imagen.jpeg') center no-repeat;
-    background-size: contain; /* Ajusta el tamaño para contener el borde */
+  }
+  
+  /* Elementos de la galería */
+  .masonry-item {
+    background-color: #fff;
+    background-image: url('../images/borde_imagen.jpeg');
+    background-repeat: center no-repeat;
+    background-size: contain;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
-}
-
-.masonry-item::before {
+  }
+  
+  .masonry-item::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../images/salpicadura.jpeg') fixed; /* Ruta de la imagen de salpicaduras de pintura */
-    opacity: 0.2; /* Opacidad de las salpicaduras */
-    z-index: -1; /* Coloca la salpicadura en el fondo */
-}
-
-.masonry-item img {
+    background-image: url('../images/salpicadura.jpeg');
+    background-repeat: fixed;
+    opacity: 0.2;
+    z-index: -1;
+  }
+  
+  .masonry-item img {
     width: 100%;
     height: 400px; /* Ajusta esta altura según tus preferencias */
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor manteniendo las proporciones */
+    object-fit: cover;
     display: block;
-    border-bottom: 1px solid #2c3e50;
-}
-
-
-a {
-    color: #ecf0f1;
+  }
+  
+  /* Enlaces */
+  a {
+    color: var(--accent-color);
     text-decoration: none;
     transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #3498db;
-}
+  }
+  
+  a:hover {
+    color: #fff;
+  }
+  

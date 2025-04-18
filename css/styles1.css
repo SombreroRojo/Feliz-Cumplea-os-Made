@@ -1,67 +1,112 @@
-/* Agrega estilos para el cuadro de carta */
-.letter-box {
+/* Colores principales */
+:root {
+    --primary-color: #ff0000; /* Rojo */
+    --secondary-color: #ffff00; /* Amarillo */
+    --accent-color: #333; /* Gris oscuro */
+    --text-color: #fff; /* Blanco */
+  }
+  
+  /* Estilos globales */
+  body {
+    margin: 0;
+    font-family: 'Gothic', sans-serif;
+    background: url('../images/fondo.jpeg') center fixed;
+    background-size: cover;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    min-height: 100vh; /* Altura mínima de la ventana del navegador */
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+    width: 100%; /* Ancho completo de la pantalla */
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 3px;
+  }
+  
+  /* Contenido principal */
+  main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+  
+  /* Imagen principal */
+  .main-image {
+    width: 40%; /* Ajusta el ancho de la imagen según tus preferencias */
+    max-width: 600px; /* Ancho máximo de la imagen */
+    height: 300px; /* Altura fija de la imagen */
+    margin-bottom: 20px;
+  }
+  
+  /* Cuadro de carta */
+  .letter-box {
     background-color: #fff;
-    border: 2px solid #333;
+    border: 2px solid var(--accent-color);
     border-radius: 8px;
     padding: 20px;
-    margin: 20px auto; /* Cambiado para centrar el cuadro */
-    max-width: 600px;
-    text-align: center; /* Alinea el contenido al centro */
-}
-
-textarea {
+    width: 60%; /* Ajusta el ancho del recuadro según tus preferencias */
+    max-width: 800px; /* Ancho máximo del recuadro */
+    text-align: center;
+  }
+  
+  .letter-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .letter-box p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
     width: 100%;
     height: 150px;
     resize: none;
-}
-
-/* Estilos para la imagen */
-.img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh; /* Ajusta la altura según tus preferencias */
-}
-
-.img-container img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-}
-
-/* Estilos para el botón de regreso al index */
-.back-button {
+    padding: 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Gothic', sans-serif;
+  }
+  
+  .letter-box button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  /* Botón para regresar al index */
+  .back-button {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
     background: radial-gradient(circle, #ff0000, #ffff00); /* Degradado entre rojo y amarillo */
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
-    border-radius: 50%; /* Hace que el botón sea circular */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-}
-
-.back-button:hover {
-    background: radial-gradient(circle, #ff3333, #ffcc00); /* Cambia el degradado al pasar el mouse */
-}
-
-
-/* Estilos para la imagen */
-img {
-    display: block;
-    margin: auto;
-    width: 60%; /* Ajusta el tamaño de la imagen según tus preferencias */
-    max-width: 600px; /* Máximo ancho de la imagen */
-    height: auto;
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-}
-
-/* Estilos para el pie de página */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #33333300;
-    color: white;
-}
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
